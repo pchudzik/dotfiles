@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function mvnf(){
+	mvn -o -DskipTests=true $@
+}
+complete -F _mvn mvnf
+
+function httpServer() {
+	/usr/bin/python -m SimpleHTTPServer $1
+}
+
