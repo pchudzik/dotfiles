@@ -1,0 +1,32 @@
+[user]
+	name = Paweł Chudzik
+	email = pawel.chudzik@netsprint.eu
+[diff]
+	tool = meld
+	prompt = false
+[merge]
+	tool = meld
+	prompt = false
+[mergetool "meld"]
+	cmd = meld
+	tool = meld
+	trustExitCode = false
+	promt = false
+[difftool "meld"]
+	cmd = meld
+	promt = false
+
+[alias]
+	lg = log --color --stat
+	st = status
+	ci = commit
+	co = checkout
+	review = push origin HEAD:refs/for/master
+	rereview = commit --amend
+
+[color]
+	ui = auto
+[difftool]
+	prompt = false
+[core]
+	editor = vim

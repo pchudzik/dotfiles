@@ -1,0 +1,27 @@
+[user]
+  name = Paweł Chudzik
+  email = pawel.chudzik@gmail.com
+
+[core]
+  editor = vim
+
+[color]
+  ui = true
+
+[difftool]
+  tool = meld
+  prompt = false
+
+[mergetool]
+  tool = meld
+  prompt = false
+  trustExitCode = false
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log --stat
+  purr = pull --rebase
