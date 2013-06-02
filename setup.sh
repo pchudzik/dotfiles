@@ -22,3 +22,4 @@ function addFile() {
 DIR=`pwd`
 addFile "$HOME/.vimrc" "$DIR/vimrc"
 addFile "$HOME/.gitconfig" "$DIR/gitconfig"
+addFile "$HOME/.gitignore" "$DIR/gitignore"
