@@ -4,7 +4,7 @@
 
 [core]
   editor = vim
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 
 [color]
   ui = true
@@ -26,3 +26,6 @@
   df = diff
   lg = log --stat
   purr = pull --rebase
+
+[push]
+  default = simple
