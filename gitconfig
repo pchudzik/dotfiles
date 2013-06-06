@@ -28,6 +28,8 @@
   purr = pull --rebase
   amend = commit --amend
   panic = !tar cvf ../git-panic.tar *
+  fetch = fetch -v
+  fetchall = fetch -v --all
 
 [push]
   default = simple
