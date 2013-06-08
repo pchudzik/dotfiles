@@ -1,6 +1,5 @@
-[user]
-  name = Paweł Chudzik
-  email = pawel.chudzik@gmail.com
+[include]
+  path = ~/.gitauthorize
 
 [core]
   editor = vim
@@ -19,6 +18,7 @@
   trustExitCode = false
 
 [alias]
+  a = add
   st = status
   ci = commit
   br = branch
