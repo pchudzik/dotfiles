@@ -5,8 +5,8 @@ set ruler				"Pozycja w pliku zawsze widoczna
 set incsearch			"Wyszukiwanie przyrstowe
 set tabstop=4			"Miniejszy tabulator
 
-if has('mouse')			"Jesli jest myszka to mozna smyrac
-	set mouse=a
+if has("syntax")        "automatyczne kolorowanie skladni
+	syntax on
 endif
 
 au BufRead,BufNewFile * start	"Po włączeniu od razu wskakuje w tryb edycji
