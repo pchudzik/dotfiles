@@ -24,6 +24,9 @@
   br = branch
   co = checkout
   df = diff
+  rb = rebase
+  rbc = rebase --continue
+  rba = rebase --abort
   lg = log --stat
   purr = pull --rebase
   amend = commit --amend
