@@ -9,3 +9,17 @@ function httpServer() {
 	/usr/bin/python -m SimpleHTTPServer $1
 }
 
+function clipboard() {
+	TO_CLIP=$1
+	CMD="xclip -selection clipboard"
+	if [ -f $TO_CLIP ]; then
+		cat $TO_CLIP | xclip -selection clipboard
+		echo "Content of file $TO_CLIP copied into clipboard"
+	elif [ -d $TO_CLIP ]; then
+		 (pwd && tree) | xclip -selection clipboard
+		 echo "Directory structure of $TO_CLIP copied into clipboard"
+	else
+		echo $TO_CLIP | xclip -selection clipboard 
+		echo "Copied into clipboard"
+	fi;
+}
