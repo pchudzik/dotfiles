@@ -1,3 +1,5 @@
+. ~/.dotfiles/git-completion.bash
+
 alias ll='ls -lFh'
 alias la='ls -A'
 alias l='ls -CF'
@@ -10,6 +12,7 @@ alias m=mvn
 complete -F _mvn m
 
 alias g=git
+__git_complete g __git_main
 
 alias pu="pushd"
 alias po="popd"
