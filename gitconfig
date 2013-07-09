@@ -34,6 +34,8 @@
   panic = !DIR=`basename $PWD` && tar cvf ../git-panic-$DIR-`date +"%Y-%m-%d_%H.%M.%S"`.tar *
   fetch = fetch -v
   fetchall = fetch -v --all
+  unstage = reset HEAD
+  discard = checkout -- 
 
 [push]
   default = simple
