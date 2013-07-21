@@ -23,3 +23,7 @@ function clipboard() {
 		echo "Copied into clipboard"
 	fi;
 }
+
+function open() {
+	(/usr/bin/xdg-open $@ &> /dev/null)
+}

@@ -20,3 +20,5 @@ alias po="popd"
 psgrep() {
 	ps -aux | grep $1 | grep -v grep	
 }
+
+alias o=open

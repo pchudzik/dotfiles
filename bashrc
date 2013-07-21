@@ -77,12 +77,12 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 if [ -f ~/.functions ]; then
     . ~/.functions
+fi
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
 
 if [ -d ~/bin ]; then
