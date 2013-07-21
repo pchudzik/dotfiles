@@ -20,6 +20,7 @@
 [alias]
   a = add
   st = status
+  s = status
   ci = commit
   br = branch
   co = checkout
@@ -29,6 +30,7 @@
   rbc = rebase --continue
   rba = rebase --abort
   lg = log --stat
+  l = log --pretty=format:'%h %an %ad : %s' --date=relative
   purr = pull --rebase
   amend = commit --amend
   panic = !DIR=`basename $PWD` && tar cvf ../git-panic-$DIR-`date +"%Y-%m-%d_%H.%M.%S"`.tar *
