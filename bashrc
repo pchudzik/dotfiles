@@ -89,6 +89,15 @@ if [ -d ~/bin ]; then
 	export PATH="$PATH:~/bin"
 fi
 
+if [ -d /usr/lib/jvm/scala ]; then
+	export SCALA_HOME="/usr/lib/jvm/scala"
+	export PATH="$PATH:$SCALA_HOME/bin"
+fi
+
+if [ -d /usr/lib/jvm/sbt ]; then
+	export SBT_HOME="/usr/lib/jvm/sbt"
+	export PATH="$PATH:$SBT_HOME/bin"
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
