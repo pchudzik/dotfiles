@@ -1,0 +1,33 @@
+#!/bin/bash
+
+VIDEO=$1
+TXT_SUB=$2
+
+SRT_SUB="`echo $TXT_SUB | sed 's/\.txt$//g'`.srt"
+TXT_SUB_UTF="$TXT_SUB.utf8"
+
+MPLAYER_OUT="dumpsub.srt"
+
+# convert line endings to work properly with mplayer
+dos2unix "$TXT_SUB" > /dev/null 2>&1
+
+# convert subtitle encoding to utf8
+iconv -f cp1250 -t utf8 "$TXT_SUB" -o "$TXT_SUB_UTF" > /dev/null 2>&1
+
+# start mplayer and quit asap (with subtitle converting)
+echo q | mplayer -sub "$TXT_SUB_UTF" -subcp utf8 -dumpsrtsub $VIDEO -vo null -ao null > /dev/null 2>&1
+
+# replace ź character (can not encode properly on my smart tv)
+sed -i 's/ź/z/g' "$MPLAYER_OUT"
+
+# encode in iso8859-2 to work on my smart tv
+iconv -f utf8 -t iso8859-2 "$MPLAYER_OUT" -o "$SRT_SUB"
+
+# remove slash from line starts
+sed -i 's/^\///g' "$SRT_SUB"
+
+# cleanup temporary files
+rm "$MPLAYER_OUT"
+rm "$TXT_SUB_UTF"
+
+echo "Subtitles converted into $SRT_SUB"
