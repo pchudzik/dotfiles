@@ -29,6 +29,7 @@
   rb = rebase
   rbc = rebase --continue
   rba = rebase --abort
+  rbi = "!f() { git rebase -i HEAD~$1; }; f"
   lg = log --stat
   l = log --pretty=format:'%h %an %ad : %s' --date=relative
   purr = pull --rebase
