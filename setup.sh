@@ -20,10 +20,11 @@ function addFile() {
 }
 
 DIR=`pwd`
-addFile "$HOMR/.bashrc" "$DIR/bashrc"
+addFile "$HOME/.completion" "$DIR/completion"
+addFile "$HOME/.functions.d" "$DIR/functions.d"
+addFile "$HOME/.bashrc" "$DIR/bashrc"
 addFile "$HOME/.vimrc" "$DIR/vimrc"
 addFile "$HOME/.gitconfig" "$DIR/gitconfig"
 addFile "$HOME/.gitignore" "$DIR/gitignore"
-addFile "$HOME/.gitauthorize" "$DIR/gitauthorize"
 addFile "$HOME/.bash_aliases" "$DIR/bash_aliases"
-addFile "$HOME/.function" "$DIR/functions"
+addFile "$HOME/.functions" "$DIR/functions"

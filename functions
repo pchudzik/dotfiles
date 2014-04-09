@@ -28,7 +28,7 @@ function open() {
 	(/usr/bin/xdg-open $@ &> /dev/null)
 }
 
-DOTFILES="/home/$USER/.dotfiles/functions.d"
+DOTFILES="/home/$USER/.functions.d"
 for file in `ls $DOTFILES/*sh`; do
 	if [ -x $file ]; then
 		. $file

@@ -1,4 +1,4 @@
-. ~/.dotfiles/git-completion.bash
+. ~/.completion/git-completion.bash
 
 alias ll='ls -lFh'
 alias la='ls -A'
