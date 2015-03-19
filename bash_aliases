@@ -24,3 +24,5 @@ psgrep() {
 }
 
 alias o=open
+
+alias gnome-terminal='gnome-terminal --geometry=120x20'
