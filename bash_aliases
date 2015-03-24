@@ -1,6 +1,7 @@
 . ~/.completion/git-completion.bash
 
 alias ll='ls -lFh'
+alias lla='ls -laFh'
 alias la='ls -A'
 alias l='ls -CF'
 
