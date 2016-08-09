@@ -34,6 +34,7 @@
   l = log --pretty=format:'%h %an %ad : %s' --date=relative
   purr = pull --rebase
   amend = commit --amend
+  aamend = commit --amend --no-edit
   panic = !DIR=`basename $PWD` && tar cvf ../git-panic-$DIR-`date +"%Y-%m-%d_%H.%M.%S"`.tar *
   fetch = fetch -v
   fetchall = fetch -v --all
