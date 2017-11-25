@@ -28,3 +28,5 @@ addFile "$HOME/.gitconfig" "$DIR/gitconfig"
 addFile "$HOME/.gitignore" "$DIR/gitignore"
 addFile "$HOME/.bash_aliases" "$DIR/bash_aliases"
 addFile "$HOME/.functions" "$DIR/functions"
+addFile "$HOME/.config/quicktile.cfg" "$DIR/quicktile.cfg"
+

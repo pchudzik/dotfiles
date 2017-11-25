@@ -25,3 +25,7 @@ psgrep() {
 alias o=open
 
 alias gnome-terminal='gnome-terminal --geometry=120x20'
+
+alias fix-k810='for device in /dev/hidraw*; do sudo /opt/k810/k810_conf -d $device -f on 2> /dev/null ; done'
+alias k810-fix='fix-k810'
+
