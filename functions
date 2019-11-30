@@ -24,10 +24,6 @@ function clipboard() {
 	fi;
 }
 
-function open() {
-	(/usr/bin/xdg-open $@ &> /dev/null)
-}
-
 DOTFILES="$HOME/.functions.d"
 for file in `ls $DOTFILES/*sh`; do
 	if [ -x $file ]; then
